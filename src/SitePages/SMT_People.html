@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title></title>
+
+    <!--[if gte mso 9]>
+    <xml>
+        <mso:CustomDocumentProperties>
+        <mso:_dlc_DocId msdt:dt="string">XZ5JH7FU5RF2-9-8</mso:_dlc_DocId>
+        <mso:_dlc_DocIdItemGuid msdt:dt="string">7a3861ca-5b6a-432f-9582-63e301c34ab1</mso:_dlc_DocIdItemGuid>
+        <mso:_dlc_DocIdUrl msdt:dt="string">https://intranet.chda.maxuk.co.uk/about/_layouts/15/DocIdRedir.aspx?ID=XZ5JH7FU5RF2-9-8,XZ5JH7FU5RF2-9-8</mso:_dlc_DocIdUrl>
+        </mso:CustomDocumentProperties>
+    </xml>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/_catalogs/masterpage/ShareBoot/css/bootstrap.css" />
+    <link rel="stylesheet" href="/Style Library/styles/custom.css" />
+
+    <script type="text/javascript" src="/_catalogs/masterpage/ShareBoot/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/_catalogs/masterpage/ShareBoot/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Style Library/scripts/jquery.SPServices.min.js"></script>
+
+</head>
+
+<body>
+    <div class="box-placeholder">
+        <div class="row">
+            <div id="ContactCard"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var method = "GetListItems";
+            var list = "SMT";
+            //var fieldsToRead = "<ViewFields>" + "<FieldRef Name='Picture' />" + "<FieldRef Name='Title' />" + "<FieldRef Name='test' />" + "<FieldRef Name='Department' />" + "<FieldRef Name='Description' />" + "</ViewFields>";
+            //var queryString = "<Query></Query>"
+            //+ "<Where>" + "<Or>" + "<Or>" + "<Eq>" + "<FieldRef Name='Title'/><Value Type='Text'>The America</Value>" + "</Eq>" + "<Eq>" + "<FieldRef Name='Dream_x0020_Destination' /><Value Type='Text'>USA</Value>" + "</Eq>" + "</Or>" + "<IsNotNull>" + "<FieldRef Name='PPP'/>" + "</IsNotNull>" + "</Or>" + "</Where>" + "<OrderBy>" + "<FieldRef Name='PPP' Ascending='False'/>" + "</OrderBy>" + "</Query>";
+
+            $().SPServices({
+                operation: method,
+                async: false,
+                listName: list,
+                CAMLViewFields: "<ViewFields><FieldRef Name='Title' /><FieldRef Name='LastName' /><FieldRef Name='Picture' /><FieldRef Name='Department' /><FieldRef Name='JobTitle' /><FieldRef Name='Description' /><FieldRef Name='Phone' /><FieldRef Name='EmailAddress' /></ViewFields>",
+                //CAMLQuery: queryString,
+
+                completefunc: function (xData, Status) {
+                    $(xData.responseXML).SPFilterNode("z:row").each(function () {
+                        var FirstName = ($(this).attr("ows_Title"));
+                        var LastName = ($(this).attr("ows_LastName"));
+                        var JobTitle = ($(this).attr("ows_JobTitle0").split(",")[1]);
+                        var TeamURL = ($(this).attr("ows_JobTitle0").split(",")[0]);
+                        var UserImage = ($(this).attr("ows_Picture").split(",")[0]);
+                        var Phone = ($(this).attr("ows_Phone"));
+                        var Description = ($(this).attr("ows_Description"));
+                        var Department = ($(this).attr("ows_Department"));
+                        var Email = ($(this).attr("ows_EmailAddress"));
+                        var ID = Math.round(($(this).attr("ows_ID"), 0));
+
+                        //alert(TeamURL);
+
+                        $("#ContactCard").append("<div class='col-sm-4 col-md-2 info-card'>" +
+                            "<img alt='SMT Photo' style='width: 100%; left:-5px' src='" + UserImage + "' />" +
+                            "<div class='info-card-details'>" +
+                            "<div class='info-card-header'>" +
+                            "<h1>" + FirstName + "&nbsp" + LastName + "</h1>" +
+                            "<a href='" + TeamURL + "' target='_blank'><h4>" + JobTitle + "</h4></a>" +
+                            "</div>" +
+                            //
+                            //	"<div class='info-card-details'>" +
+                            //		"<h3>" + FirstName + "&nbsp" + LastName + "<h3>" +
+                            //		"<a href='mailto:" + Email + "?subject=Contact from Intranet&body=Hi " + FirstName + "'><i class='fa fa-envelope'></i></a>&nbsp" +
+                            //		"<i class='fa fa-phone'></i>&nbsp" + Phone +
+                            //		"<p>" + Description + "</p>" +
+                            //	"</div>" +
+                            "</div>" +
+                            "</div>");
+                    });
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
