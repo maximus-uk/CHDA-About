@@ -95,16 +95,16 @@ our culture, our behaviours and our values are very important to us.</p>
 											and guides you on:</p>
 											<ul class="noHover">
 											   <li> 
-												  <span class="glyphicon glyphicon-record"></span> 
+												  
 													How you work 
 													with your 
 													colleagues</li>
 											   <li> 
-												  <span class="glyphicon glyphicon-record"></span> 
+												  
 													How we achieve 
 													our targets</li>
 											   <li> 
-												  <span class="glyphicon glyphicon-record"></span> 
+												  
 													How we provide 
 													an excellent 
 													customer 
@@ -128,91 +128,95 @@ our culture, our behaviours and our values are very important to us.</p>
 </WebPart>
 </WebPartPages:ContentEditorWebPart>
 </ZoneTemplate></WebPartPages:WebPartZone>
-	<img src="/PublishingImages/Culture_Graphic.png" class="cultureImage"/>
-      
+	<img src="sites/chda/PublishingImages/Culture Graphic-01.png" class="cultureImage"/>
+
+	<div class="smtBanner">
+		<h3 class="smtTitle">Our Values</h3>						
+	</div>							
+	
+	<ul class="nav nav-tabs smtTabBar">
+		<li class="active"><a data-toggle="tab" href="#value1">
+		Performance</a></li>
+		<li><a data-toggle="tab" href="#value2">
+		Commitment</a></li>
+		<li><a data-toggle="tab" href="#value3">
+		Collaboration</a></li>
+		<li><a data-toggle="tab" href="#value4">
+		Integrity</a></li>							
+	</ul>
+								
+	<div class="tab-content smtTabContainer">
+		<div id="value1" class="tab-pane fade in active">
+			<div class="smtValues">
+				<div class="smtValues-container performance"> 
+					<p><span class="fa fa-circle"></span> 
+					We take ownership</p>
+					<p><span class="fa fa-circle"></span> 
+					We seek to exceed expectations</p>
+					<p><span class="fa fa-circle"></span> 
+					We proactively identify solutions</p>
+					<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=1" target="_blank">
+					Example of good performance-focus behaviour</a><br/>
+					</p>
+				  </div>
+			</div>      
+		</div>
+		<div id="value2" class="tab-pane fade">
+			<div class="smtValues">
+				<div class="smtValues-container commitment">
+					<p><span class="fa fa-circle"></span> 
+					We take pride in our work</p>
+					<p><span class="fa fa-circle"></span>	
+					We have a &quot;can do&quot; attitude</p>
+					<p><span class="fa fa-circle"></span> 
+					We are resilient</p>
+					<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=3" target="_blank">
+					Example of good commitment behaviour</a><br/>						        	 
+
+					</p>								
+				</div>
+			</div>									
+		</div>
+		<div id="value3" class="tab-pane fade">
+			<div class="smtValues">
+				<div class="smtValues-container collaboration">
+					<p><span class="fa fa-circle"></span> 
+					We help and support each other</p>
+					<p><span class="fa fa-circle"></span> 
+					We work as one team</p>
+					<p><span class="fa fa-circle"></span> 
+					We We empower people</p>
+					<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=4" target="_blank">
+					Example of good collaboration behaviour</a><br/>
+					</p>								    																
+				</div>									
+			</div>
+		</div>
+		<div id="value4" class="tab-pane fade">
+			<div class="smtValues">
+				<div class="smtValues-container integrity">
+					<p><span class="fa fa-circle"></span> 
+					We do what&#39;s right</p>
+					<p><span class="fa fa-circle"></span> 
+					We treat people with respect</p>
+					<p><span class="fa fa-circle"></span> 
+					We are inclusive</p>
+					<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=2" target="_blank">
+					Example of good integrity behaviour</a><br/>								
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="PlaceHolderAppContent" runat="server"> 
+
 </asp:Content>
 
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">             
-			                 				    										
-				<div class="smtBanner">
-					<h3 class="smtTitle">Our Values</h3>						
-				</div>							
-				
-				<ul class="nav nav-tabs smtTabBar">
-					<li class="active"><a data-toggle="tab" href="#value1">
-					Performance</a></li>
-					<li><a data-toggle="tab" href="#value2">
-					Commitment</a></li>
-					<li><a data-toggle="tab" href="#value3">
-					Collaboration</a></li>
-					<li><a data-toggle="tab" href="#value4">
-					Integrity</a></li>							
-				</ul>
-											
-				<div class="tab-content smtTabContainer">
-					<div id="value1" class="tab-pane fade in active">
-						<div class="smtValues">
-							<div class="smtValues-container performance"> 
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We take ownership</p>
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We seek to exceed expectations</p>
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We proactively identify solutions</p>
-								<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=1" target="_blank">
-								Example of good performance-focus behaviour</a><br/>
-								</p>
-				          	</div>
-				    	</div>      
-				    </div>
-					<div id="value2" class="tab-pane fade">
-						<div class="smtValues">
-							<div class="smtValues-container commitment">
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We take pride in our work</p>
-								<p><span class="glyphicon glyphicon-record"></span>	
-								We have a &quot;can do&quot; attitude</p>
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We are resilient</p>
-								<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=3" target="_blank">
-								Example of good commitment behaviour</a><br/>						        	 
-	
-						        </p>								
-							</div>
-						</div>									
-				    </div>
-					<div id="value3" class="tab-pane fade">
-						<div class="smtValues">
-							<div class="smtValues-container collaboration">
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We help and support each other</p>
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We work as one team</p>
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We We empower people</p>
-								<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=4" target="_blank">
-								Example of good collaboration behaviour</a><br/>
-								</p>								    																
-							</div>									
-						</div>
-				    </div>
-					<div id="value4" class="tab-pane fade">
-						<div class="smtValues">
-							<div class="smtValues-container integrity">
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We do what&#39;s right</p>
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We treat people with respect</p>
-								<p><span class="glyphicon glyphicon-record"></span> 
-								We are inclusive</p>
-								<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=2" target="_blank">
-								Example of good integrity behaviour</a><br/>								
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-						    
+			                 				    																    
     <script type="text/javascript">
 
         var siteName;
@@ -230,7 +234,6 @@ our culture, our behaviours and our values are very important to us.</p>
 
                     getLinkData(siteTitle);
 					getContacts(siteURL, 'Contacts');
-					$('#siteWelcomeText').append('<h2>Welcome to the ' + siteTitle + ' - CHDA Culture</h2>');
                 },
                 error: function (data) {
                     console.log("Error: " + data);
