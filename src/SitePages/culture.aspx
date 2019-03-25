@@ -31,7 +31,7 @@
 <%-- ***** For content to be added to the left container ***** --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageContent" runat="server"> 
 
-	<div id="siteWelcomeText"></div>
+	<div id="siteWelcomeText"><h2>Welcome to the CHDA Culture page</h2></div>
 
 	<WebPartPages:WebPartZone runat="server" title="Left Section" id="WebPartZone1" FrameType="TitleBarOnly" __designer:Preview="&lt;Regions&gt;&lt;Region Name=&quot;0&quot; Editable=&quot;True&quot; Content=&quot;&quot; NamingContainer=&quot;True&quot; /&gt;&lt;/Regions&gt;&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;0&quot; id=&quot;WebPartZone1&quot;&gt;
 &lt;tr&gt;
