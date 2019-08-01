@@ -38,35 +38,10 @@
         
 </asp:Content>
 
-<%-- ***** For code to be added within the page body but not content for the left container ***** --%>
-<asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+<%-- ***** For code to be added within the page body ***** --%>
+<asp:Content ContentPlaceHolderId="PlaceHolderPageCode" runat="server">
 				            	 
     <script type="text/javascript">
-        
-        if (typeof (MSOLayout_MakeInvisibleIfEmpty) === "function") {
-            MSOLayout_MakeInvisibleIfEmpty();
-        }
-
-        var siteName;
-        var siteTitle;                               
-
-        $(function () {        	       	
-		 	        	
-			$.ajax({
-				url: siteURL + "/_api/web/title",
-				method: "GET",
-				headers: { "Accept": "application/json; odata=verbose" },
-				success: function (data) {						
-                    siteTitle = data.d.Title;
-					siteName = siteURL.split('co.uk/')[1];                                                                                                                   
-					
-					getLinkData(siteTitle);
-				},
-				error: function (data) {
-					console.log("Error: "+ data);
-				}
-            });                       
-        });
 
     </script>
 

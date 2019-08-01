@@ -11,8 +11,7 @@
 <%-- _lcid="1033" _version="15.0.4420" _dal="1" --%>
 <%-- _LocalBinding --%>
 
-<%@ Page Language="C#" MasterPageFile="/_catalogs/masterpage/ShareBoot/ShareBoot.master" Inherits="Microsoft.SharePoint.WebPartPages.WebPartPage,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" meta:progid="SharePoint.WebPartPage.Document" %>
-
+<%@ Page Language="C#" MasterPageFile="~masterurl/custom.master" Inherits="Microsoft.SharePoint.WebPartPages.WebPartPage,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" meta:progid="SharePoint.WebPartPage.Document" %>
 <%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Import Namespace="Microsoft.SharePoint" %>
@@ -27,9 +26,9 @@
     </style>
 </asp:Content>
 
-<asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
+<%-- ***** For content to be added to the left container ***** --%>
+<asp:Content ContentPlaceHolderID="PlaceHolderPageContent" runat="server"> 
 
-    <div class="col-sm-10 col-md-10 col-lg-10 pageLeftContainer">
 
         <!-- ****************** -->
         <!-- **** Top Row ***** -->
@@ -90,7 +89,7 @@
             <div class="col-sm-5 col-md-5 col-lg-5">
                 <div class="smtBanner">
                     <h3 class="smtTitle">As CHDA SMT we commit to:</h3>
-                    <div class="smtTabContainer"><img src="/about/PublishingImages/Our_Misson_and_Values.png"/></div>
+                    <div class="smtTabContainer"><img src="/sites/chda/about/PublishingImages/Our_Misson_and_Values.png" height="50%"/></div>
                 </div>
 
             </div>
@@ -104,33 +103,19 @@
                 <div id="ContactCard"></div>
             </div>
         </div>
-    </div>
+</asp:Content>
+
+<%-- ***** For small apps to be added to the middle container ***** --%>
+<asp:Content ContentPlaceHolderID="PlaceHolderAppContent" runat="server"> 
+</asp:Content>
+
+<%-- ***** For code to be added within the page body but not content for the left container ***** --%>
+<asp:Content ContentPlaceHolderId="PlaceHolderPageCode" runat="server">
 
     <script type="text/javascript">
 
-        var siteName;
-        var siteTitle;
-
-        if (typeof (MSOLayout_MakeInvisibleIfEmpty) == "function") {
-            MSOLayout_MakeInvisibleIfEmpty();
-        }
-
         $(function () {
-
-            $.ajax({
-                url: siteURL + "/_api/web/title",
-                method: "GET",
-                headers: { "Accept": "application/json; odata=verbose" },
-                success: function (data) {
-                    siteTitle = data.d.Title;
-                    siteName = siteURL.split('co.uk/')[1];
-
-                    getSMTCards();
-                },
-                error: function (data) {
-                    console.log("Error: " + data);
-                }
-            });
+            getSMTCards();
         });
 
         function getSMTCards() {
@@ -210,17 +195,4 @@
 
     </script>
 
-</asp:Content>
-
-<asp:Content ContentPlaceHolderID="PlaceHolderSearchArea" runat="server">
-	<SharePoint:DelegateControl runat="server"
-        ControlId="SmallSearchInputBox" __designer:Preview="&lt;div class=&quot;ms-webpart-chrome ms-webpart-chrome-fullWidth &quot;&gt;
-	&lt;div WebPartID=&quot;00000000-0000-0000-0000-000000000000&quot; HasPers=&quot;true&quot; id=&quot;WebPart&quot; width=&quot;100%&quot; class=&quot;ms-WPBody &quot; OnlyForMePart=&quot;true&quot; allowDelete=&quot;false&quot; style=&quot;&quot; &gt;&lt;div componentid=&quot;SmallSearchInputBox1_csr&quot; id=&quot;SmallSearchInputBox1_csr&quot;&gt;&lt;div id=&quot;SearchBox&quot; name=&quot;Control&quot;&gt;&lt;div class=&quot;ms-srch-sb ms-srch-sb-border&quot; id=&quot;SmallSearchInputBox1_csr_sboxdiv&quot;&gt;&lt;input type=&quot;text&quot; value=&quot;Search...&quot; maxlength=&quot;2048&quot; accessKey=&quot;S&quot; title=&quot;Search...&quot; id=&quot;SmallSearchInputBox1_csr_sbox&quot; autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; onkeypress=&quot;EnsureScriptFunc(&#39;Search.ClientControls.js&#39;, &#39;Srch.U&#39;, function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find(&#39;SmallSearchInputBox1_csr&#39;).search($get(&#39;SmallSearchInputBox1_csr_sbox&#39;).value);return Srch.U.cancelEvent(event);}})&quot; onkeydown=&quot;EnsureScriptFunc(&#39;Search.ClientControls.js&#39;, &#39;Srch.U&#39;, function() {var ctl = $find(&#39;SmallSearchInputBox1_csr&#39;);ctl.activateDefaultQuerySuggestionBehavior();})&quot; onfocus=&quot;EnsureScriptFunc(&#39;Search.ClientControls.js&#39;, &#39;Srch.U&#39;, function() {var ctl = $find(&#39;SmallSearchInputBox1_csr&#39;);ctl.hidePrompt();ctl.setBorder(true);})&quot; onblur=&quot;EnsureScriptFunc(&#39;Search.ClientControls.js&#39;, &#39;Srch.U&#39;, function() {var ctl = $find(&#39;SmallSearchInputBox1_csr&#39;); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})&quot; class=&quot;ms-textSmall ms-srch-sb-prompt ms-helperText&quot;/&gt;&lt;a title=&quot;Search&quot; class=&quot;ms-srch-sb-searchLink&quot; id=&quot;SmallSearchInputBox1_csr_SearchLink&quot; onclick=&quot;EnsureScriptFunc(&#39;Search.ClientControls.js&#39;, &#39;Srch.U&#39;, function() {$find(&#39;SmallSearchInputBox1_csr&#39;).search($get(&#39;SmallSearchInputBox1_csr_sbox&#39;).value);})&quot; href=&quot;javascript: {}&quot; &gt;&lt;img src=&quot;/_layouts/15/images/searchresultui.png?rev=23&quot; class=&quot;ms-srch-sb-searchImg&quot; id=&quot;searchImg&quot; alt=&quot;Search&quot; /&gt;&lt;/a&gt;&lt;div class=&quot;ms-qSuggest-container ms-shadow&quot; id=&quot;AutoCompContainer&quot;&gt;&lt;div id=&quot;SmallSearchInputBox1_csr_AutoCompList&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;noscript&gt;&lt;div id=&quot;SmallSearchInputBox1_noscript&quot;&gt;It looks like your browser does not have JavaScript enabled. Please turn on JavaScript and try again.&lt;/div&gt;&lt;/noscript&gt;&lt;div id=&quot;SmallSearchInputBox1&quot;&gt;
-
-	&lt;/div&gt;&lt;div class=&quot;ms-clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;" __designer:Values="&lt;P N=&#39;ControlId&#39; T=&#39;SmallSearchInputBox&#39; /&gt;&lt;P N=&#39;ID&#39; ID=&#39;1&#39; T=&#39;ctl00&#39; /&gt;&lt;P N=&#39;Page&#39; ID=&#39;2&#39; /&gt;&lt;P N=&#39;TemplateControl&#39; R=&#39;2&#39; /&gt;&lt;P N=&#39;AppRelativeTemplateSourceDirectory&#39; R=&#39;-1&#39; /&gt;"/>
-</asp:Content>
-
-<asp:Content ContentPlaceHolderID="PlaceHolderPageDescription" runat="server">
-	<SharePoint:ProjectProperty Property="Description" runat="server" __designer:Preview="" __designer:Values="&lt;P N=&#39;Property&#39; T=&#39;Description&#39; /&gt;&lt;P N=&#39;InDesign&#39; T=&#39;False&#39; /&gt;&lt;P N=&#39;ID&#39; ID=&#39;1&#39; T=&#39;ctl01&#39; /&gt;&lt;P N=&#39;Page&#39; ID=&#39;2&#39; /&gt;&lt;P N=&#39;TemplateControl&#39; R=&#39;2&#39; /&gt;&lt;P N=&#39;AppRelativeTemplateSourceDirectory&#39; R=&#39;-1&#39; /&gt;"/>
 </asp:Content>

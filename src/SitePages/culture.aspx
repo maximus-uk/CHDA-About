@@ -51,194 +51,77 @@
 &lt;/tr&gt;
 &lt;/table&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;" __designer:Values="&lt;P N=&#39;Title&#39; ID=&#39;1&#39; T=&#39;Left Section&#39; /&gt;&lt;P N=&#39;HeaderText&#39; R=&#39;1&#39; /&gt;&lt;P N=&#39;DisplayTitle&#39; R=&#39;1&#39; /&gt;&lt;P N=&#39;ID&#39; ID=&#39;2&#39; T=&#39;WebPartZone1&#39; /&gt;&lt;P N=&#39;FrameType&#39; E=&#39;2&#39; /&gt;&lt;P N=&#39;PartChromeType&#39; E=&#39;3&#39; /&gt;&lt;P N=&#39;Page&#39; ID=&#39;3&#39; /&gt;&lt;P N=&#39;TemplateControl&#39; R=&#39;3&#39; /&gt;&lt;P N=&#39;AppRelativeTemplateSourceDirectory&#39; R=&#39;-1&#39; /&gt;" __designer:Templates="&lt;Group Name=&quot;ZoneTemplate&quot;&gt;&lt;Template Name=&quot;ZoneTemplate&quot; Content=&quot;&quot; /&gt;&lt;/Group&gt;"><ZoneTemplate>
-<WebPartPages:ContentEditorWebPart runat="server" __MarkupType="xmlmarkup" WebPart="true" __WebPartId="{22F08EF7-C881-4CB0-AD68-5F3541BBF15B}" __Preview="&lt;div class=&quot;ms-webpart-chrome ms-webpart-chrome-fullWidth &quot;&gt;
-&lt;div WebPartID=&quot;22f08ef7-c881-4cb0-ad68-5f3541bbf15b&quot; HasPers=&quot;false&quot; id=&quot;WebPart&quot; width=&quot;100%&quot; class=&quot;ms-WPBody &quot; allowDelete=&quot;false&quot; style=&quot;&quot; &gt;&lt;div id=&quot;WebPartContent&quot; PreviewAvailable=&quot;false&quot;&gt;&lt;/div&gt;&lt;div class=&quot;ms-clear&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;" >
-<WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
-<Title>Main Text</Title>
-<FrameType>None</FrameType>
-<Description>Allows authors to enter rich text content.</Description>
-<IsIncluded>true</IsIncluded>
-<ZoneID>WebPartZone1</ZoneID>
-<PartOrder>1</PartOrder>
-<FrameState>Normal</FrameState>
-<Height />
-<Width />
-<AllowRemove>true</AllowRemove>
-<AllowZoneChange>true</AllowZoneChange>
-<AllowMinimize>true</AllowMinimize>
-<AllowConnect>true</AllowConnect>
-<AllowEdit>true</AllowEdit>
-<AllowHide>true</AllowHide>
-<IsVisible>true</IsVisible>
-<DetailLink />
-<HelpLink />
-<HelpMode>Modeless</HelpMode>
-<Dir>Default</Dir>
-<PartImageSmall />
-<MissingAssembly>Cannot import this Web Part.</MissingAssembly>
-<PartImageLarge>/_layouts/15/images/mscontl.gif</PartImageLarge>
-<IsIncludedFilter />
-<ExportControlledProperties>true</ExportControlledProperties>
-<ConnectionID>00000000-0000-0000-0000-000000000000</ConnectionID>
-<ID>g_22f08ef7_c881_4cb0_ad68_5f3541bbf15b</ID>
-<ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
-<Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"><![CDATA[<p>MAXIMUS is a values-driven organisation and across the whole MAXIMUS family, 
-our culture, our behaviours and our values are very important to us.</p>
-											<p>We have tried to 
-											capture the essence of 
-											CHDA to develop a 
-											culture which supports 
-											our purpose and 
-											strategic priorities, 
-											and guides you on:</p>
-											<ul class="noHover">
-											   <li> 
-												  
-													How you work 
-													with your 
-													colleagues</li>
-											   <li> 
-												  
-													How we achieve 
-													our targets</li>
-											   <li> 
-												  
-													How we provide 
-													an excellent 
-													customer 
-													experience.</li>
-											</ul> 
-											<br/> 
-											<p>Our culture is 
-											comprised of our 
-											Mission, our Values, our 
-											Behaviours and our Aim:</p>
-							
-											<p>Through research, 
-											consultation and 
-											discussion, our Mission, 
-											Values, Behaviours and 
-											Aim were developed.</p><p>
-					&nbsp;</p>
-											<div dir="ltr" style="text-align: left;"> 
-												&nbsp;</div>]]></Content>
-<PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
-</WebPart>
-</WebPartPages:ContentEditorWebPart>
-</ZoneTemplate></WebPartPages:WebPartZone>
-	<img src="sites/chda/PublishingImages/Culture Graphic-01.png" class="cultureImage"/>
+&lt;/table&gt;" __designer:Values="&lt;P N=&#39;Title&#39; ID=&#39;1&#39; T=&#39;Left Section&#39; /&gt;&lt;P N=&#39;HeaderText&#39; R=&#39;1&#39; /&gt;&lt;P N=&#39;DisplayTitle&#39; R=&#39;1&#39; /&gt;&lt;P N=&#39;ID&#39; ID=&#39;2&#39; T=&#39;WebPartZone1&#39; /&gt;&lt;P N=&#39;FrameType&#39; E=&#39;2&#39; /&gt;&lt;P N=&#39;PartChromeType&#39; E=&#39;3&#39; /&gt;&lt;P N=&#39;Page&#39; ID=&#39;3&#39; /&gt;&lt;P N=&#39;TemplateControl&#39; R=&#39;3&#39; /&gt;&lt;P N=&#39;AppRelativeTemplateSourceDirectory&#39; R=&#39;-1&#39; /&gt;" __designer:Templates="&lt;Group Name=&quot;ZoneTemplate&quot;&gt;&lt;Template Name=&quot;ZoneTemplate&quot; Content=&quot;&quot; /&gt;&lt;/Group&gt;"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 
-	<div class="smtBanner">
-		<h3 class="smtTitle">Our Values</h3>						
-	</div>							
-	
-	<ul class="nav nav-tabs smtTabBar">
-		<li class="active"><a data-toggle="tab" href="#value1">
-		Performance</a></li>
-		<li><a data-toggle="tab" href="#value2">
-		Commitment</a></li>
-		<li><a data-toggle="tab" href="#value3">
-		Collaboration</a></li>
-		<li><a data-toggle="tab" href="#value4">
-		Integrity</a></li>							
-	</ul>
-								
-	<div class="tab-content smtTabContainer">
-		<div id="value1" class="tab-pane fade in active">
-			<div class="smtValues">
-				<div class="smtValues-container performance"> 
-					<p><span class="fa fa-circle"></span> 
-					We take ownership</p>
-					<p><span class="fa fa-circle"></span> 
-					We seek to exceed expectations</p>
-					<p><span class="fa fa-circle"></span> 
-					We proactively identify solutions</p>
-					<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=1" target="_blank">
-					Example of good performance-focus behaviour</a><br/>
-					</p>
-				  </div>
-			</div>      
+	<div class="row cultureContainer">
+		<div class="col-6">	
+			<img src="/sites/chda/PublishingImages/core_values/Culture Graphic-01.png" class="cultureImage"/>
 		</div>
-		<div id="value2" class="tab-pane fade">
-			<div class="smtValues">
-				<div class="smtValues-container commitment">
-					<p><span class="fa fa-circle"></span> 
-					We take pride in our work</p>
-					<p><span class="fa fa-circle"></span>	
-					We have a &quot;can do&quot; attitude</p>
-					<p><span class="fa fa-circle"></span> 
-					We are resilient</p>
-					<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=3" target="_blank">
-					Example of good commitment behaviour</a><br/>						        	 
 
-					</p>								
+		<div class="col-6">
+			<div class="smtBanner">
+				<h3 class="smtTitle">Our Values</h3>						
+			</div>							
+			
+			<ul class="nav nav-tabs smtTabBar">
+				<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#value1">Performance</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#value2">Commitment</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#value3">Collaboration</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#value4">Integrity</a></li>							
+			</ul>
+										
+			<div class="tab-content smtTabContainer">
+				<div id="value1" class="tab-pane fade active">
+					<div class="smtValues">
+						<div class="smtValues-container performance"> 
+							<p><i class="fa fa-circle"></i> We take ownership</p>
+							<p><i class="fa fa-circle"></i> We seek to exceed expectations</p>
+							<p><i class="fa fa-circle"></i> We proactively identify solutions</p>
+							<p><a href="/sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=1" target="_blank">Example of good performance-focus behaviour</a></p>
+						</div>
+					</div>      
 				</div>
-			</div>									
-		</div>
-		<div id="value3" class="tab-pane fade">
-			<div class="smtValues">
-				<div class="smtValues-container collaboration">
-					<p><span class="fa fa-circle"></span> 
-					We help and support each other</p>
-					<p><span class="fa fa-circle"></span> 
-					We work as one team</p>
-					<p><span class="fa fa-circle"></span> 
-					We We empower people</p>
-					<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=4" target="_blank">
-					Example of good collaboration behaviour</a><br/>
-					</p>								    																
-				</div>									
-			</div>
-		</div>
-		<div id="value4" class="tab-pane fade">
-			<div class="smtValues">
-				<div class="smtValues-container integrity">
-					<p><span class="fa fa-circle"></span> 
-					We do what&#39;s right</p>
-					<p><span class="fa fa-circle"></span> 
-					We treat people with respect</p>
-					<p><span class="fa fa-circle"></span> 
-					We are inclusive</p>
-					<p><a href="sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=2" target="_blank">
-					Example of good integrity behaviour</a><br/>								
-					</p>
+				<div id="value2" class="tab-pane fade">
+					<div class="smtValues">
+						<div class="smtValues-container commitment">
+							<p><i class="fa fa-circle"></i> We take pride in our work</p>
+							<p><i class="fa fa-circle"></i> We have a &quot;can do&quot; attitude</p>
+							<p><i class="fa fa-circle"></i> We are resilient</p>
+							<p><a href="/sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=3" target="_blank">Example of good commitment behaviour</a></p>								
+						</div>
+					</div>									
+				</div>
+				<div id="value3" class="tab-pane fade">
+					<div class="smtValues">
+						<div class="smtValues-container collaboration">
+							<p><i class="fa fa-circle"></i> We help and support each other</p>
+							<p><i class="fa fa-circle"></i> We work as one team</p>
+							<p><i class="fa fa-circle"></i> We empower people</p>
+							<p><a href="/sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=4" target="_blank">Example of good collaboration behaviour</a></p>								    																
+						</div>									
+					</div>
+				</div>
+				<div id="value4" class="tab-pane fade">
+					<div class="smtValues">
+						<div class="smtValues-container integrity">
+							<p><i class="fa fa-circle"></i> We do what&#39;s right</p>
+							<p><i class="fa fa-circle"></i> We treat people with respect</p>
+							<p><i class="fa fa-circle"></i> We are inclusive</p>
+							<p><a href="/sites/chda/communications/Culture/MVB%20Customer%20Feedback%20Poster.pdf#page=2" target="_blank">Example of good integrity behaviour</a></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 </asp:Content>
 
+<%-- ***** For small apps to be added to the middle container ***** --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderAppContent" runat="server"> 
 </asp:Content>
 
-<asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">             
-			                 				    																    
+<%-- ***** For code to be added within the page body but not content for the left container ***** --%>
+<asp:Content ContentPlaceHolderId="PlaceHolderPageCode" runat="server">             			                 				    																    
     <script type="text/javascript">
-
-        var siteName;
-        var siteTitle;
-		 	
-        $(function () {
-		 	
-            $.ajax({
-                url: siteURL + "/_api/web/title",
-                method: "GET",
-                headers: { "Accept": "application/json; odata=verbose" },
-                success: function (data) {
-                    siteTitle = data.d.Title;
-                    siteName = siteURL.split('co.uk/')[1];
-
-                    getLinkData(siteTitle);
-					getContacts(siteURL, 'Contacts');
-                },
-                error: function (data) {
-                    console.log("Error: " + data);
-                }
-            });                     
-        });
     </script>
-
 </asp:Content>
