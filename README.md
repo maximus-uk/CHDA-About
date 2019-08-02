@@ -1,2 +1,2 @@
 # CHDA-About (Dev)
-CHDA About Us subsite
+CHDA About Us subsite on the development tenant
