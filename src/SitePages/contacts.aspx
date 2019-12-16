@@ -131,10 +131,6 @@
 
 </asp:Content>
 
-<%-- ***** For small apps to be added to the middle container ***** --%>
-<asp:Content ContentPlaceHolderID="PlaceHolderAppContent" runat="server"> 
-</asp:Content>
-
 <%-- ***** For code to be added at the end of the page body ***** --%>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageCode" runat="server">
             

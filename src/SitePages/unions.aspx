@@ -48,10 +48,6 @@
 
 </asp:Content>
 
-<%-- ***** For small apps to be added to the middle container ***** --%>
-<asp:Content ContentPlaceHolderID="PlaceHolderAppContent" runat="server"> 
-</asp:Content>
-
 <%-- ***** For code to be added within the page body but not content for the left container ***** --%>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageCode" runat="server">
          	
