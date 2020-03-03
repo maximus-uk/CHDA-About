@@ -52,7 +52,8 @@
 <asp:Content ContentPlaceHolderId="PlaceHolderPageCode" runat="server">
          	
     <script type="text/javascript">
-               
+            $('nav .nav-item').removeClass('active');
+		    $('nav li').eq(1).addClass('active');               
     </script>
 
 </asp:Content>

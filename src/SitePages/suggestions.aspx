@@ -26,7 +26,6 @@
 
     <!-- STYLES -->
     <style type="text/css">       
-        #usefulLinksGroup1, #usefulLinksSiteContacts{display:none}
     </style>
 
 </asp:Content>
@@ -63,6 +62,8 @@
     <script type="text/javascript">
    
         $(function () {
+            $('nav .nav-item').removeClass('active');
+		    $('nav li').eq(1).addClass('active');
             getTabs(siteURL);
             getItems(siteURL);     
         });

@@ -15,7 +15,6 @@
 
     <!-- STYLES -->
     <style type="text/css">
-        #usefulLinksGroup1, #usefulLinksSiteContacts{display:none}
     </style>
 
 </asp:Content>
@@ -53,7 +52,8 @@
         var siteTitle;
 
         $(function () {
-
+            $('nav .nav-item').removeClass('active');
+		    $('nav li').eq(1).addClass('active');
             $.ajax({
                 url: siteURL + "/_api/web/title",
                 method: "GET",

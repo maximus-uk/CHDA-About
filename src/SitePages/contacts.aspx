@@ -17,7 +17,7 @@
 
     <!-- STYLES -->
     <style type="text/css">
-        #usefulLinksGroup1, #usefulLinksSiteContacts{display:none}
+       /* #usefulLinksGroup1, #usefulLinksSiteContacts{display:none}*/
     </style>
 
 </asp:Content>
@@ -31,11 +31,11 @@
     
     <!-- ***** Contacts Section ***** -->
     <div class="contactsContainer" id="contacts">                    
-        <div class="col-sm-4 col-md-4 col-lg-4 contactsTabs">                     		    
+        <div class="col-4 contactsTabs">                     		    
             <ul class="nav nav-pills nav-stacked" id="tabNames"></ul>
         </div>
 
-        <div class="col-sm-8 col-md-8 co-lg-8 contactsContent">		                
+        <div class="col-8 contactsContent">		                
             <div class="tab-content" id="tabData">
                 
                 <!-- ***** MAXIMUS Shared Services ***** -->
@@ -142,6 +142,8 @@
         var tabNum = [];
 
         $(function () {
+            $('nav .nav-item').removeClass('active');
+            $('nav li').eq(1).addClass('active');
 
             $.ajax({
                 url: siteURL,

@@ -23,7 +23,6 @@
 
     <!-- STYLES -->
     <style type="text/css">
-        #usefulLinksGroup1, #usefulLinksSiteContacts{display:none}
     </style>
 
 </asp:Content>
@@ -54,7 +53,7 @@
 &lt;/table&gt;" __designer:Values="&lt;P N=&#39;Title&#39; ID=&#39;1&#39; T=&#39;Left Section&#39; /&gt;&lt;P N=&#39;HeaderText&#39; R=&#39;1&#39; /&gt;&lt;P N=&#39;DisplayTitle&#39; R=&#39;1&#39; /&gt;&lt;P N=&#39;ID&#39; ID=&#39;2&#39; T=&#39;WebPartZone1&#39; /&gt;&lt;P N=&#39;FrameType&#39; E=&#39;2&#39; /&gt;&lt;P N=&#39;PartChromeType&#39; E=&#39;3&#39; /&gt;&lt;P N=&#39;Page&#39; ID=&#39;3&#39; /&gt;&lt;P N=&#39;TemplateControl&#39; R=&#39;3&#39; /&gt;&lt;P N=&#39;AppRelativeTemplateSourceDirectory&#39; R=&#39;-1&#39; /&gt;" __designer:Templates="&lt;Group Name=&quot;ZoneTemplate&quot;&gt;&lt;Template Name=&quot;ZoneTemplate&quot; Content=&quot;&quot; /&gt;&lt;/Group&gt;"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 
 	<div class="row cultureContainer">
-		<div class="col-6">	
+		<div class="col">	
 			<img src="/sites/chda/PublishingImages/core_values/Culture Graphic-01.png" class="cultureImage"/>
 		</div>
 
@@ -119,5 +118,7 @@
 <%-- ***** For code to be added within the page body but not content for the left container ***** --%>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageCode" runat="server">             			                 				    																    
     <script type="text/javascript">
+        $('nav .nav-item').removeClass('active');
+		    $('nav li').eq(1).addClass('active');
     </script>
 </asp:Content>

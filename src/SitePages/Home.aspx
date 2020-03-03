@@ -17,7 +17,6 @@
 
     <!-- STYLES -->
     <style type="text/css">
-        #usefulLinksGroup1, #usefulLinksSiteContacts{display:none}
     </style>
 
 </asp:Content>

@@ -22,7 +22,6 @@
 
     <!-- STYLES -->
     <style type="text/css">
-        #usefulLinksGroup1, #usefulLinksSiteContacts{display:none}
     </style>
 </asp:Content>
 
@@ -37,7 +36,7 @@
             <!-- *********************** -->
             <!-- **** Left Section ***** -->
             <!-- *********************** -->
-            <div class="col-sm-7 col-md-7 col-lg-7">
+            <div class="col-6">
                 <h1>Meet the Senior Management Team (SMT)</h1>
                 <p>
                     Our Senior Management Team (SMT) consists of 
@@ -86,7 +85,7 @@
             <!-- ************************* -->
             <!-- **** Middle Section ***** -->
             <!-- ************************* -->
-            <div class="col-sm-5 col-md-5 col-lg-5">
+            <div class="col">
                 <div class="smtBanner">
                     <h3 class="smtTitle">As CHDA SMT we commit to:</h3>
                     <div class="smtTabContainer"><img src="/sites/chda/about/PublishingImages/Our_Misson_and_Values.png" height="50%"/></div>
@@ -99,7 +98,7 @@
         <!-- **** Bottom Row ***** -->
         <!-- ********************* -->
         <div class="row contactContainer">
-            <div class="col-sm-12 col-md-12 col-lg-12 contactCardRow">
+            <div class="col-12 contactCardRow">
                 <div id="ContactCard"></div>
             </div>
         </div>
@@ -111,6 +110,8 @@
     <script type="text/javascript">
 
         $(function () {
+            $('nav .nav-item').removeClass('active');
+		    $('nav li').eq(1).addClass('active');            
             getSMTCards();
         });
 
